@@ -1,0 +1,44 @@
+/* src/auth/styles/AuthButton.css */
+
+.auth-button {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin-top: 8px;
+}
+
+.auth-button--primary {
+  background: #1e3a5f;
+  color: #ffffff;
+}
+
+.auth-button--primary:hover:not(:disabled) {
+  background: #152a45;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+}
+
+.auth-button--primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.auth-button--secondary {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.auth-button--secondary:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.auth-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
