@@ -1,0 +1,82 @@
+file structure:
+
+whosyourcaddy/
+├── index.html                    ← Main landing page
+├── assets/                       ← Static assets
+│   ├── css/
+│   │   ├── main.css             ← Global styles
+│   │   ├── auth.css             ← Authentication-specific styles
+│   │   └── components.css       ← Reusable component styles
+│   ├── js/
+│   │   ├── main.js              ← Global JavaScript
+│   │   └── auth.js              ← Authentication logic
+│   └── images/
+│       ├── logo.png
+│       └── icons/
+├── pages/
+│   ├── authentication/
+│   │   ├── login.html
+│   │   ├── signup.html
+│   │   ├── login-error.html
+│   │   └── signup-error.html
+│   ├── dashboard/
+│   │   └── index.html
+│   └── caddies/
+│       └── index.html
+└── src/                          ← Your React code (if you keep it)
+
+new file structure:
+
+my-project/
+├── public/                  # Static files
+│   ├── index.html           # Main HTML template
+│   ├── favicon.ico          # Favicon
+│   └── assets/              # Global assets (images, fonts, etc.)
+│
+├── src/
+│   ├── app/                 # Main app logic and routing
+│   │   ├── App.tsx          # Root component with routes
+│   │   ├── routes.tsx       # Route definitions (React Router)
+│   │   └── store.ts         # Redux/Context store (if used)
+│   │
+│   ├── auth/                # Authentication module
+│   │   ├── components/      # Reusable auth components (Login, Register, etc.)
+│   │   ├── pages/           # Page components
+│   │   ├── hooks/           # Custom auth hooks (useAuth, useLogin, etc.)
+│   │   ├── services/        # Auth API calls (login, register, etc.)
+│   │   ├── types/           # TypeScript types/interfaces
+│   │   └── index.ts         # Exports for the auth module
+│   │
+│   ├── client-type-1/       # Client Type 1 module
+│   │   ├── components/      # Reusable components for Client 1
+│   │   ├── pages/           # Page components (Dashboard, Profile, etc.)
+│   │   ├── hooks/           # Custom hooks for Client 1
+│   │   ├── services/        # API calls for Client 1
+│   │   ├── types/           # TypeScript types/interfaces
+│   │   └── index.ts         # Exports for Client 1 module
+│   │
+│   ├── client-type-2/       # Client Type 2 module
+│   │   ├── components/      # Reusable components for Client 2
+│   │   ├── pages/           # Page components (Dashboard, Profile, etc.)
+│   │   ├── hooks/           # Custom hooks for Client 2
+│   │   ├── services/        # API calls for Client 2
+│   │   ├── types/           # TypeScript types/interfaces
+│   │   └── index.ts         # Exports for Client 2 module
+│   │
+│   ├── shared/              # Shared resources across modules
+│   │   ├── components/      # Global reusable components (Header, Footer, etc.)
+│   │   ├── hooks/           # Global custom hooks
+│   │   ├── utils/           # Utility functions (helpers, constants, etc.)
+│   │   ├── styles/          # Global styles (CSS/SCSS modules, themes)
+│   │   └── types/           # Global TypeScript types/interfaces
+│   │
+│   ├── index.tsx            # Entry point for React
+│   └── main.tsx             # ReactDOM render logic
+│
+├── .env                     # Environment variables
+├── package.json             # Project dependencies and scripts
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
+
+
+
