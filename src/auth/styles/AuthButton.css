@@ -14,12 +14,12 @@
 }
 
 .auth-button--primary {
-  background: #009a44;
+  background: var(--color-irish-green);
   color: #ffffff;
 }
 
 .auth-button--primary:hover:not(:disabled) {
-  background: #009a44;
+  background: var(--colour-irish-green);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
 }

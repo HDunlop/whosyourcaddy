@@ -1,0 +1,17 @@
+/* src/shared/types/constants.css */
+
+:root {
+  --colour-irish-green: #009a44;
+  --colour-background-light: #f3f4f6;
+  --colour-disabled-background-light: #f9fafb;
+  --colour-background-dark: #1e3a5f;
+  --colour-white: #ffffff;
+  --colour-text-gray: #374151;
+  --colour-text-placeholder: #9ca3af;
+  --colour-text-light: #1f2937;
+  --colour-border-light: #e5e7eb;
+  --colour-error-background: #fef2f2;
+  --colour-error-border: #fecaca;
+  --colour-error-text: #991b1b;
+  --colour-error-red: #ef4444;
+}
