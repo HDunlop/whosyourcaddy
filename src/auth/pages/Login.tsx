@@ -7,11 +7,13 @@ import { AuthInput } from '../components/AuthInput.tsx';
 import { AuthButton } from '../components/AuthButton.tsx';
 import { AuthError } from '../components/AuthError.tsx';
 import '../styles/AuthPage.css';
+import { useAuth0 } from '@auth0/auth0-react';
 
 export const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { login, loading, error } = useAuth();
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
   const navigate = useNavigate();
 
   const handleLogin = async () => {
@@ -70,7 +72,8 @@ export const Login: React.FC = () => {
 
             <AuthButton
               onClick={handleLogin}
-              disabled={!email || !password}
+              // onClick={() => void loginWithRedirect()}
+              disabled={!email || !password || isAuthenticated} // disable if (1) already authenticated, (2) no email, (3) no password
               loading={loading}
             >
               Enter

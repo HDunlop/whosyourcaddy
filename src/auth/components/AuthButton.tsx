@@ -11,7 +11,7 @@ interface AuthButtonProps {
   variant?: 'primary' | 'secondary';
 }
 
-export const AuthButton: React.FC<AuthButtonProps> = ({
+const AuthButton: React.FC<AuthButtonProps> = ({
   children,
   onClick,
   disabled = false,
@@ -28,3 +28,5 @@ export const AuthButton: React.FC<AuthButtonProps> = ({
     </button>
   );
 };
+
+export { AuthButton };

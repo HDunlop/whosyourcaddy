@@ -13,7 +13,7 @@ interface UseAuthReturn {
   validateRegistration: (credentials: RegisterCredentials) => AuthErrorType | null;
 }
 
-export const useAuth = (): UseAuthReturn => {
+const useAuth = (): UseAuthReturn => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -107,3 +107,5 @@ export const useAuth = (): UseAuthReturn => {
     validateRegistration,
   };
 };
+
+export { useAuth };
