@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth.ts';
+// import { useAuth } from '../hooks/useAuth.ts';
 import { AuthInput } from '../components/AuthInput.tsx';
 import { AuthButton } from '../components/AuthButton.tsx';
-import { AuthError } from '../components/AuthError.tsx';
+// import { AuthError } from '../components/AuthError.tsx';
 import '../styles/AuthPage.css';
 
 export const Register: React.FC = () => {
@@ -95,12 +95,12 @@ export const Register: React.FC = () => {
               autoComplete="new-password"
             />
 
-            {error && <AuthError message={error} />}
+            {/* {error && <AuthError message={error} />} */}
 
             <AuthButton
               onClick={handleRegister}
               disabled={!isFormValid}
-              loading={loading}
+              // loading={loading}
             >
               Enter
             </AuthButton>

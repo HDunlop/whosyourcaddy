@@ -80,3 +80,8 @@ my-project/
 
 
 
+
+test account emails: {
+    test1@email.com
+}
+test accounts password: password!123
