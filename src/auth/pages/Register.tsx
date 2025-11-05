@@ -9,6 +9,7 @@ import { AuthError } from '../components/AuthError.tsx';
 import '../styles/AuthPage.css';
 
 export const Register: React.FC = () => {
+  // const [userType,
   const [email, setEmail] = useState('');
   const [confirmEmail, setConfirmEmail] = useState('');
   const [password, setPassword] = useState('');

@@ -1,4 +1,4 @@
-// src/auth/pages/LoginPage.tsx
+// src/auth/pages/Login.tsx
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

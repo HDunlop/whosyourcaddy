@@ -1,9 +1,9 @@
-/* src/auth/styles/AuthButton.css */
+/* src/auth/styles/AuthSplitButton.css */
 
-.auth-button {
-  width: 100%;
+.auth-split-button {
+  width: 80%;
   padding: 14px 24px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -13,32 +13,40 @@
   margin-top: 8px;
 }
 
-.auth-button--primary {
+.auth-split-button--primary {
   background: #009a44;
   color: #ffffff;
 }
 
-.auth-button--primary:hover:not(:disabled) {
+.auth-split-button--primary:hover:not(:disabled) {
   background: #009a44;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
 }
 
-.auth-button--primary:active:not(:disabled) {
+.auth-split-button--primary:active:not(:disabled) {
   transform: translateY(0);
 }
 
-.auth-button--secondary {
+.auth-split-button--secondary {
   background: #f3f4f6;
   color: #374151;
 }
 
-.auth-button--secondary:hover:not(:disabled) {
+.auth-split-button--secondary:hover:not(:disabled) {
   background: #f3f4f6;
 }
 
-.auth-button:disabled {
+.auth-split-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
   transform: none;
 }
+
+
+
+
+
+
+
+

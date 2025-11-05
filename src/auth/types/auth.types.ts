@@ -6,8 +6,10 @@ export interface LoginCredentials {
 }
 
 export interface RegisterCredentials {
+  // userType: 'caddy' | 'club';
   email: string;
   confirmEmail: string;
+  // verifiedEmail: boolean;
   password: string;
   confirmPassword: string;
 }
@@ -29,3 +31,5 @@ export interface AuthErrorType {
 }
 
 export type AuthMode = 'login' | 'register';
+
+export type SplitButtonOption = 'caddy' | 'club';

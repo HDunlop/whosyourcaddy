@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { AuthService } from '../services/authService.ts';
-import { LoginCredentials, RegisterCredentials, AuthErrorType } from '../types/auth.types.ts';
+import { LoginCredentials, RegisterCredentials, AuthErrorType, SplitButtonOption } from '../types/auth.types.ts';
 
 interface UseAuthReturn {
   loading: boolean;
@@ -65,7 +65,7 @@ export const useAuth = (): UseAuthReturn => {
     if (response.success) {
       return true;
     } else {
-      setError(response.message || 'Bad credentials. Please try again.');
+      setError(response.message || 'Login failed. Please check your credentials and try again.');
       return false;
     }
   };
